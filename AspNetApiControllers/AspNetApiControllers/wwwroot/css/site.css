@@ -1,0 +1,15 @@
+﻿html, body {
+    height: 100%;
+}
+
+section {
+    height: calc(100% - 136px);
+}
+
+footer {
+    height: 5rem;
+}
+
+.person-create {
+    margin-bottom: 2rem;
+}

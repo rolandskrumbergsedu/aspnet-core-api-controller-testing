@@ -1,0 +1,29 @@
+﻿@model List<AspNetApiControllers.Controllers.Person>
+@{
+    Layout = "_Layout";
+}
+
+    <section id="person-list-section" class="p-5">
+
+        <div class="person-create">
+            <a href="/personui/create">Add new person</a>
+        </div>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var person in Model)
+                {
+                    <tr>
+                        <th>@person.Id</th>
+                        <td>@person.Name</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </section>

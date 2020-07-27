@@ -1,0 +1,20 @@
+﻿@model AspNetApiControllers.Controllers.Person
+@{
+    Layout = "_Layout";
+}
+
+    <section class="p-5">
+        <form asp-controller="PersonUi" asp-action="Create" method="post">
+            <div class="form-group">
+                <label asp-for="Id" for="person-id">Id</label>
+                <input asp-for="Id" class="form-control" id="person-id" placeholder="Id">
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" for="person-name">Name</label>
+                <input asp-for="Name" class="form-control" id="person-name" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </section>
